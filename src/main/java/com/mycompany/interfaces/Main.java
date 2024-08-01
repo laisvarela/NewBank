@@ -95,6 +95,11 @@ public class Main extends javax.swing.JFrame {
         bt_sair.setForeground(new java.awt.Color(0, 102, 0));
         bt_sair.setText("Sair");
         bt_sair.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        bt_sair.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bt_sairActionPerformed(evt);
+            }
+        });
 
         jSeparator5.setForeground(new java.awt.Color(0, 153, 0));
 
@@ -235,6 +240,11 @@ public class Main extends javax.swing.JFrame {
         bt_exit.setForeground(new java.awt.Color(0, 102, 0));
         bt_exit.setText("Exit");
         bt_exit.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        bt_exit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bt_exitActionPerformed(evt);
+            }
+        });
 
         jSeparator6.setForeground(new java.awt.Color(0, 153, 0));
 
@@ -345,14 +355,19 @@ public class Main extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+    
+    private void bt_sairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_sairActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_bt_sairActionPerformed
+
+    private void bt_exitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_exitActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_bt_exitActionPerformed
 
     public static void main(String args[]) {
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Main().setVisible(true);
-                new Main().setLocationRelativeTo(null);
-            }
-        });
+        Main w = new Main();
+        w.setVisible(true);
+        w.setLocationRelativeTo(null);
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

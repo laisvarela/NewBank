@@ -10,6 +10,13 @@ public class Conta {
         this.titular = titular;
     }
 
+    public Conta() {
+    }
+
+    public double getSaldo() {
+        return saldo;
+    }
+    
     public int getNumero() {
         return numero;
     }
@@ -23,9 +30,13 @@ public class Conta {
     }
     
     public boolean sacar (double valor){
-        return true;
+        if(valor>0)
+            return true;
+        return false;
     }
     public boolean depositar (double valor){
-        return true;
+        if(valor>0)
+            return true;
+        return false;
     }
 }   

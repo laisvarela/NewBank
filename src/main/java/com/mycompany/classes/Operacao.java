@@ -17,6 +17,4 @@ public class Operacao {
         this.date = data;
         this.conta = c;
     }
-    
-    
 }

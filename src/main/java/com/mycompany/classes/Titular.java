@@ -15,6 +15,9 @@ public class Titular {
     public void setNome(String n) {
         this.nome = n;
     }
-    
+
+    public String getNome() {
+        return nome;
+    }
     
 }
