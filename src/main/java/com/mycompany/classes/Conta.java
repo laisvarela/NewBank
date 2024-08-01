@@ -1,6 +1,7 @@
 package com.mycompany.classes;
 
 public class Conta {
+
     private int numero;
     private double saldo;
     private Titular titular;
@@ -16,7 +17,7 @@ public class Conta {
     public double getSaldo() {
         return saldo;
     }
-    
+
     public int getNumero() {
         return numero;
     }
@@ -28,15 +29,12 @@ public class Conta {
     public Titular getTitular() {
         return titular;
     }
-    
-    public boolean sacar (double valor){
-        if(valor>0)
-            return true;
-        return false;
+
+    public boolean sacar(double valor) {
+        return valor > 0;
     }
-    public boolean depositar (double valor){
-        if(valor>0)
-            return true;
-        return false;
+
+    public boolean depositar(double valor) {
+        return valor > 0;
     }
-}   
+}

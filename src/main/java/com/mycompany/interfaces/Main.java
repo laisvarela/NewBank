@@ -71,14 +71,14 @@ public class Main extends javax.swing.JFrame {
         lb_titulo.setForeground(new java.awt.Color(0, 102, 0));
         lb_titulo.setText("NewBank");
 
-        txt_nome.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, null, java.awt.Color.green, null, java.awt.Color.green));
+        txt_nome.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, java.awt.Color.white, java.awt.Color.green, java.awt.Color.white, java.awt.Color.green));
 
-        txt_endereco.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, null, java.awt.Color.green, java.awt.Color.green, null));
+        txt_endereco.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, java.awt.Color.white, java.awt.Color.green, java.awt.Color.green, java.awt.Color.white));
 
         cb_tipodeconta.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         cb_tipodeconta.setForeground(new java.awt.Color(0, 102, 0));
         cb_tipodeconta.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Salário", "Poupança", "Corrente" }));
-        cb_tipodeconta.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, java.awt.Color.green, null));
+        cb_tipodeconta.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, java.awt.Color.green, java.awt.Color.white, java.awt.Color.white, java.awt.Color.white));
 
         lb_tipodeconta.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         lb_tipodeconta.setForeground(new java.awt.Color(0, 102, 0));
@@ -216,14 +216,14 @@ public class Main extends javax.swing.JFrame {
         lb_titulo1.setForeground(new java.awt.Color(0, 102, 0));
         lb_titulo1.setText("NewBank");
 
-        txt_name.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, null, java.awt.Color.green, null, java.awt.Color.green));
+        txt_name.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, java.awt.Color.white, java.awt.Color.green, java.awt.Color.white, java.awt.Color.green));
 
-        txt_address.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, null, java.awt.Color.green, java.awt.Color.green, null));
+        txt_address.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, java.awt.Color.white, java.awt.Color.green, java.awt.Color.green, java.awt.Color.white));
 
         cb_tipodeconta1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         cb_tipodeconta1.setForeground(new java.awt.Color(0, 102, 0));
         cb_tipodeconta1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Salary", "Savings ", "Current" }));
-        cb_tipodeconta1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, java.awt.Color.green, null));
+        cb_tipodeconta1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, java.awt.Color.green, java.awt.Color.white, java.awt.Color.white, java.awt.Color.white));
 
         lb_account_type.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         lb_account_type.setForeground(new java.awt.Color(0, 102, 0));

@@ -17,9 +17,7 @@ public class ContaCorrente extends Conta {
 
     @Override
     public boolean sacar(double valor) {
-        if(getSaldo() - valor >= -limite)
-            return true;
-        return false;
+        return getSaldo() - valor >= -limite;
     }
 
     public boolean pagarOnline(double valor) {
