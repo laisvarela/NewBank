@@ -71,14 +71,14 @@ public class Main extends javax.swing.JFrame {
         lb_titulo.setForeground(new java.awt.Color(0, 102, 0));
         lb_titulo.setText("NewBank");
 
-        txt_nome.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, null, java.awt.Color.green, null, java.awt.Color.green));
+        txt_nome.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, java.awt.Color.white, java.awt.Color.green, java.awt.Color.white, java.awt.Color.green));
 
-        txt_endereco.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, null, java.awt.Color.green, java.awt.Color.green, null));
+        txt_endereco.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, java.awt.Color.white, java.awt.Color.green, java.awt.Color.green, java.awt.Color.white));
 
         cb_tipodeconta.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         cb_tipodeconta.setForeground(new java.awt.Color(0, 102, 0));
         cb_tipodeconta.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Salário", "Poupança", "Corrente" }));
-        cb_tipodeconta.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, java.awt.Color.green, null));
+        cb_tipodeconta.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, java.awt.Color.green, java.awt.Color.white, java.awt.Color.white, java.awt.Color.white));
 
         lb_tipodeconta.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         lb_tipodeconta.setForeground(new java.awt.Color(0, 102, 0));
@@ -95,6 +95,11 @@ public class Main extends javax.swing.JFrame {
         bt_sair.setForeground(new java.awt.Color(0, 102, 0));
         bt_sair.setText("Sair");
         bt_sair.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        bt_sair.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bt_sairActionPerformed(evt);
+            }
+        });
 
         jSeparator5.setForeground(new java.awt.Color(0, 153, 0));
 
@@ -211,14 +216,14 @@ public class Main extends javax.swing.JFrame {
         lb_titulo1.setForeground(new java.awt.Color(0, 102, 0));
         lb_titulo1.setText("NewBank");
 
-        txt_name.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, null, java.awt.Color.green, null, java.awt.Color.green));
+        txt_name.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, java.awt.Color.white, java.awt.Color.green, java.awt.Color.white, java.awt.Color.green));
 
-        txt_address.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, null, java.awt.Color.green, java.awt.Color.green, null));
+        txt_address.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, java.awt.Color.white, java.awt.Color.green, java.awt.Color.green, java.awt.Color.white));
 
         cb_tipodeconta1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         cb_tipodeconta1.setForeground(new java.awt.Color(0, 102, 0));
         cb_tipodeconta1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Salary", "Savings ", "Current" }));
-        cb_tipodeconta1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, java.awt.Color.green, null));
+        cb_tipodeconta1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, java.awt.Color.green, java.awt.Color.white, java.awt.Color.white, java.awt.Color.white));
 
         lb_account_type.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         lb_account_type.setForeground(new java.awt.Color(0, 102, 0));
@@ -235,6 +240,11 @@ public class Main extends javax.swing.JFrame {
         bt_exit.setForeground(new java.awt.Color(0, 102, 0));
         bt_exit.setText("Exit");
         bt_exit.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        bt_exit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bt_exitActionPerformed(evt);
+            }
+        });
 
         jSeparator6.setForeground(new java.awt.Color(0, 153, 0));
 
@@ -345,14 +355,19 @@ public class Main extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+    
+    private void bt_sairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_sairActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_bt_sairActionPerformed
+
+    private void bt_exitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_exitActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_bt_exitActionPerformed
 
     public static void main(String args[]) {
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Main().setVisible(true);
-                new Main().setLocationRelativeTo(null);
-            }
-        });
+        Main w = new Main();
+        w.setVisible(true);
+        w.setLocationRelativeTo(null);
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

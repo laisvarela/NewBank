@@ -11,14 +11,27 @@ public class historico {
     }
 
     public boolean registrarOperacao(Titular t, Operacao o) {
-        return true;
+        if (this.titular.equals(t)) {
+            operacoes.add(o);
+            return true;
+        } else {
+            return false;
+        }
     }
 
     public Operacao pesquisarOperacao(Operacao o) {
-        return o;
+        for (Operacao operacao : operacoes) {
+            if (operacao.equals(o)) {
+                return operacao;
+            }
+        }
+        return null;
     }
 
     public List<Operacao> pesquisarValores(double valor) {
-        return operacoes;
+        return null;
+    }
+
+    public void gerarExtratoPDF(String filePath) {
     }
 }
